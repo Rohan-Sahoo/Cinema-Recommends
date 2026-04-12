@@ -34,7 +34,7 @@ def fetch_poster(movie_id):
 
     url = (
         f"https://api.themoviedb.org/3/movie/{movie_id}"
-        f"?api_key=26f543dc7746a664d36cec9cb5f9ae6e&language=en-US"
+        f"?api_key={API_KEY}"
     )
     try:
         response = requests.get(url, timeout=3)  # ⬅️ short timeout, fail fast
